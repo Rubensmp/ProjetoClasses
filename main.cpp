@@ -6,7 +6,7 @@ using namespace std;
 
 int main(void){
     float teta;
-    int n;
+    int n=4;
     Ponto p1, p2, p3, p5, p6, p7;
 
 
@@ -36,15 +36,21 @@ int main(void){
     p7=p6;
     p7.imprime();
 
-    cout << "Digite o valor do numero de arestas: \n";
-    cin >> n;
+    //cout << "Digite o valor do numero de arestas: \n";
+    //cin >> n;
 
     Poligono poli(n), poli2(n), poli3(n), poli4(4),poli5(4);
 
-    cout << "Numero de arestas eh " << poli.getN() << ". Digite as coordenadas da arestas de modo anti-horario.\n";
-    poli.defina();
+    //cout << "Numero de arestas eh " << poli.getN() << ". Digite as coordenadas da arestas de modo anti-horario.\n";
+    //poli.defina();
+    //poli.imprimep();
+    //cout << "area = " <<  poli.area() << "\n";
+
+    poli.setPoli(0,3,1);
+    poli.setPoli(1,4,1);
+    poli.setPoli(2,4,2);
+    poli.setPoli(3,3,2);
     poli.imprimep();
-    cout << "area = " <<  poli.area() << "\n";
 
     cout << "Translacao\n";
 
@@ -70,6 +76,7 @@ int main(void){
     poli5=poli4.rotaciona(30);
     poli5.imprimep();
 
-    Retangulo k(3,1,1,1);
-
+    Retangulo k(0,0,3,4);
+    k.imprimep();
+    k.transladapoligono(-3,4);
 }

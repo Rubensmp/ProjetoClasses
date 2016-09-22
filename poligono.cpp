@@ -16,19 +16,18 @@ Poligono::Poligono(int n){
 
 Poligono::~Poligono(){}
 
-void Poligono::defina(void){
-    float x,y;
-        for(int i=0; i<npontos; i++){
-        cout << "Insira a coordenada X do ponto " << (i+1) << " do poligono\n";
-        cin >> x;
-        cout << "Insira a coordenada Y do ponto " << (i+1) << " do poligono\n";
-        cin >> y;
-        p[i].setXY(x,y);
-    }
-}
+//void Poligono::defina(void){
+//    float x,y;
+//        for(int i=0; i<npontos; i++){
+//        cout << "Insira a coordenada X do ponto " << (i+1) << " do poligono\n";
+//        cin >> x;
+//        cout << "Insira a coordenada Y do ponto " << (i+1) << " do poligono\n";
+//        cin >> y;
+//        p[i].setXY(x,y);
+//    }
+//}
 
 void Poligono::setPoli(int i, float x, float y){
-    Ponto pt;
     p[i].setXY(x,y);
 }
 
