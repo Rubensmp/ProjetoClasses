@@ -11,7 +11,6 @@ public:
     Poligono();
     Poligono(int n);
     ~Poligono();
-//    void defina(void);
     void setPoli(int i, float x, float y);
     int getN(void);
     float area(void);

@@ -5,12 +5,15 @@
 
 class Retangulo : public Poligono{
 private:
-    Poligono poli;
+    float x;
+    float y;
+    float altura;
+    float largura;
 public:
     Retangulo();
-    Retangulo(int x, int y, int largura, int altura);
+    Retangulo(float x, float y, float _largura, float _altura);
     ~Retangulo();
-    //ROTACAO CENTRO DE MASSA
+
 };
 
 #endif // RETANGULO_H

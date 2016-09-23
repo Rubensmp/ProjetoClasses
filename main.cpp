@@ -76,7 +76,8 @@ int main(void){
     poli5=poli4.rotaciona(30);
     poli5.imprimep();
 
-    Retangulo k(0,0,3,4);
-    k.imprimep();
-    k.transladapoligono(-3,4);
+    //Retangulo k(0,0,3,4);
+   // k.transladapoligono(3,4).imprimep();
+   //k.imprimep();
+
 }

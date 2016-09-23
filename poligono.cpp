@@ -16,16 +16,6 @@ Poligono::Poligono(int n){
 
 Poligono::~Poligono(){}
 
-//void Poligono::defina(void){
-//    float x,y;
-//        for(int i=0; i<npontos; i++){
-//        cout << "Insira a coordenada X do ponto " << (i+1) << " do poligono\n";
-//        cin >> x;
-//        cout << "Insira a coordenada Y do ponto " << (i+1) << " do poligono\n";
-//        cin >> y;
-//        p[i].setXY(x,y);
-//    }
-//}
 
 void Poligono::setPoli(int i, float x, float y){
     p[i].setXY(x,y);
@@ -61,7 +51,7 @@ float Poligono::area(void){
 Poligono Poligono::transladapoligono(float a, float b){
     Poligono poli(npontos);
     for(int i=0; i<npontos; i++){
-        poli.p[i].setXY(p[i].getX()+a,p[i].getY()+b);
+        poli.setPoli(i,p[i].getX()+a,p[i].getY()+b);
     }
     return poli;
 }
@@ -84,7 +74,7 @@ Poligono Poligono::rotaciona(float teta){
             p3[i].setXY((p2[i].getX()*cos(rad))-(p2[i].getY()*sin(rad)),p2[i].getX()*sin(rad)+p2[i].getY()*cos(rad));
             p3[i]=p3[i].add(p3[0]);
         }
-        poli.p[i].setXY(p3[i].getX(),p3[i].getY());
+        poli.setPoli(i,p3[i].getX(),p3[i].getY());
     }
     return poli;
 }
