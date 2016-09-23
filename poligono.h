@@ -6,6 +6,7 @@
 class Poligono{
 private:
     int npontos;
+protected:
     Ponto p[100];
 public:
     Poligono();
